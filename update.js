@@ -59,13 +59,13 @@ if (newVersion) {
 
 	await writeFile(path.join(__dirname, "package.json"), JSON.stringify(newPackageJson, undefined, "\t"))
 	// update package-lock.json
-	//await execProm("npm install");
-	//await execProm("git add .");
-	//await execProm(`git commit -m "${newPackageVersion}"`);
+	await execProm("npm install");
+	await execProm("git add .");
+	await execProm(`git commit -m "${newPackageVersion}"`);
 	// tag release
-	//await execProm(`git tag ${newPackageVersion}`);
-	//await execProm("git push");
-	//await execProm("git push --tags");
+	await execProm(`git tag ${newPackageVersion}`);
+	await execProm("git push");
+	await execProm("git push --tags");
 }else {
 	console.log("There is no newer release");
 }
