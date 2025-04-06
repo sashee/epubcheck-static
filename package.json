@@ -1,0 +1,33 @@
+{
+  "name": "epubcheck-static",
+  "version": "1.0.0-v5.1.0",
+  "description": "Packaged epubcheck.jar",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "epubcheck"
+  ],
+  "repository": "github:sashee/epubcheck-static",
+  "scripts": {
+    "test": "node --test",
+    "prepare": "node prepare.js",
+    "update": "node update.js"
+  },
+  "files": [
+    "vendor",
+    "index.js",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts",
+  "directories": {
+    "lib": "./vendor"
+  },
+  "author": {
+    "name": "Tamas Sallai",
+    "url": "https://advancedweb.hu/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "zip-lib": "^1.0.5"
+  }
+}
