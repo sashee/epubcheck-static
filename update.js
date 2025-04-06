@@ -34,8 +34,8 @@ const newVersion = await (async () => {
 	const nextAvailableRelease = allReleases
 		// only stable releases
 		.filter(({draft, prerelease}) => !draft && !prerelease)
-		// only releases that have a plantuml.jar inside
-		.filter(({assets}) => assets.some(({name}) => name === "plantuml.jar"))
+		// only releases that have an epubcheck-.*.zip inside
+		.filter(({assets}) => assets.some(({name}) => name.match(/^epubcheck-.*\.zip$/) !== null))
 		// later than the current one
 		.filter(({created_at}) => new Date(created_at).getTime() > currentReleaseDate.getTime())
 		// sort by published date ascending
