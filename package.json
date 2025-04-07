@@ -30,7 +30,7 @@
 		"url": "https://advancedweb.hu/"
 	},
 	"license": "ISC",
-	"dependencies": {
+	"devDependencies": {
 		"zip-lib": "^1.0.5"
 	}
 }
