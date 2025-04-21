@@ -1,6 +1,6 @@
 {
 	"name": "epubcheck-static",
-	"version": "2.0.0-v5.2.0",
+	"version": "3.0.0-v5.2.1",
 	"description": "Packaged epubcheck.jar",
 	"main": "index.js",
 	"type": "module",
