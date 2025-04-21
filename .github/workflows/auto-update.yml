@@ -27,5 +27,5 @@ jobs:
           --data '{
             "ref": "${{ steps.update.outputs.NEW_TAG }}",
             }' \
-          --fail
+          --fail-with-body
 
